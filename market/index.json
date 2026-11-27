@@ -3,26 +3,26 @@
   "title": { "en": "Carson's DSH plugins", "zh": "Carson 的 DSH 插件" },
   "description": {
     "en": "Small, single-purpose plugins for DeepSeek Harness.",
-    "zh": "DeepSeek Harness 的小型单功能插件。"
+    "zh": "DeepSeek Harness 的小型單功能插件。"
   },
   "metadata": {
     "categories": {
-      "memory": { "title": { "en": "Memory & context", "zh": "记忆与上下文" } }
+      "memory": { "title": { "en": "Memory & context", "zh": "記憶與上下文" } }
     },
     "labels": {
-      "host-only": { "title": { "en": "Host only", "zh": "仅 Host" } }
+      "host-only": { "title": { "en": "Host only", "zh": "僅 Host" } }
     },
     "sortKeys": {
-      "stars": { "title": { "en": "Stars", "zh": "星标" }, "order": "desc" }
+      "stars": { "title": { "en": "Stars", "zh": "星標" }, "order": "desc" }
     }
   },
   "plugins": [
     {
       "name": "dsh-plugin-constitution",
-      "title": { "en": "Engineering constitution", "zh": "工程宪法" },
+      "title": { "en": "Engineering constitution", "zh": "工程憲法" },
       "description": {
         "en": "Inherits a layered project constitution into every new session automatically.",
-        "zh": "把分层的项目宪法自动继承进每一个新会话。"
+        "zh": "把分層的項目憲法自動繼承進每一個新會話。"
       },
       "author": "Carson Wu",
       "homepage": "https://github.com/YOUR-GITHUB-NAME/dsh-plugin-constitution",

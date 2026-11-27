@@ -41,7 +41,7 @@ for (const name of ['constitution_status', 'constitution_read', 'constitution_le
 }
 
 const learn = tools.get('constitution_learn')
-const value = await learn.execute({ text: '关键尺寸按 ±5mm 验收', layer: 'project' }, { agent })
+const value = await learn.execute({ text: '關鍵尺寸按 ±5mm 驗收', layer: 'project' }, { agent })
 console.log('\n=== learn ===', JSON.stringify(value))
 console.log(learn.output.render({}, value)[0].text)
 

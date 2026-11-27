@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "工程宪法",
-    "description": "把分层的项目宪法自动继承进每一个新会话：全局工程哲学、领域包、项目法按会话的工作目录解析，并在每一步重建进系统提示，新会话不必再被重新交代一遍规则。各层是 ~/.dsh-constitution 下的普通 Markdown（可用 config 的 root 覆盖）。constitution_read 读取当前生效的层及其来源文件，constitution_learn 把新提出的长期约束沉淀进全局、领域或项目层，constitution_status 解释某层为何生效或未生效。数据不外发：语料只留在本地磁盘，每个工作目录读取一次（短暂缓存），最多向提示贡献 maxChars 个字符。关闭插件即移除该段落与三个工具，Markdown 文件保留。",
+    "title": "工程憲法",
+    "description": "把分層的項目憲法自動繼承進每一個新會話：全局工程哲學、領域包、項目法按會話的工作目錄解析，並在每一步重建進系統提示，新會話不必再被重新交代一遍規則。各層是 ~/.dsh-constitution 下的普通 Markdown（可用 config 的 root 覆蓋）。constitution_read 讀取當前生效的層及其來源文件，constitution_learn 把新提出的長期約束沉澱進全局、領域或項目層，constitution_status 解釋某層為何生效或未生效。數據不外發：語料只留在本地磁碟，每個工作目錄讀取一次（短暫緩存），最多向提示貢獻 maxChars 個字符。關閉插件即移除該段落與三個工具，Markdown 文件保留。",
     "detail": "docs/DETAIL.zh.md"
   }
 }

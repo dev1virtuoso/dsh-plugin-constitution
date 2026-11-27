@@ -1,4 +1,4 @@
-# dsh-plugin-constitution · 工程宪法
+# dsh-plugin-constitution · 工程憲法
 
 **Memory with coherence, not retrieval.**
 
@@ -13,11 +13,11 @@ mentioned in the other tab".
 
 ```
 ~/.dsh-constitution/
-├── constitution.md            # 全局：工程哲学（所有会话）
+├── constitution.md            # 全局：工程哲學（所有會話）
 ├── domains/
-│   └── cad.md                 # 领域包：match 命中时才注入
+│   └── cad.md                 # 領域包：match 命中時才注入
 └── projects/
-    └── gear-box.md            # 项目法：只对这个工作目录生效
+    └── gear-box.md            # 項目法：只對這個工作目錄生效
 ```
 
 ## Why it is not another retrieval plugin
@@ -70,14 +70,14 @@ extensions of its top-level files, and `package.json` `name` + `keywords` when p
 
 ```md
 ---
-match: cad, 机械, .step, .sldprt, gear
-title: 机械结构
+match: cad, 机械, 機械, .step, .sldprt, gear
+title: 機械結構
 ---
 
-# 机械结构 · domain constitution
+# 機械結構 · domain constitution
 
-## 验收
-- 所有关键尺寸标注公差，默认 ±0.2mm；结构间隙按 ±5mm 验收。
+## 驗收
+- 所有關鍵尺寸標註公差，默認 ±0.2mm；結構間隙按 ±5mm 驗收。
 ```
 
 ## Tools
@@ -90,7 +90,7 @@ title: 机械结构
 
 `constitution_learn` is what turns a one-off instruction into law:
 
-> "以后所有公差都按 ±5mm 验收，别再问" → `constitution_learn(text="关键尺寸按 ±5mm 验收", layer="project")`
+> "以後所有公差都按 ±5mm 驗收，別再問" → `constitution_learn(text="關鍵尺寸按 ±5mm 驗收", layer="project")`
 
 ## Config
 

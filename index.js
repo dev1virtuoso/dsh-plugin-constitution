@@ -53,17 +53,17 @@ const DEFAULTS = {
 /** Model-facing wrappers, one vocabulary per language. */
 const TEXT = {
   zh: {
-    heading: '## 工程宪法 · Constitution（跨会话自动继承）',
-    lead: '下列约束是这个项目的长期法律，由用户的记忆插件在本会话开始前自动注入。没有人在本次对话里重复交代它们，但它们与本次请求同样有效。',
+    heading: '## 工程憲法 · Constitution（跨會話自動繼承）',
+    lead: '下列約束是這個項目的長期法律，由用戶的記憶插件在本會話開始前自動注入。沒有人在本次對話裡重複交代它們，但它們與本次請求同樣有效。',
     rules: [
-      '优先级：workspace > 项目 > 领域 > 全局；同一主题相互冲突时，以优先级高者为准。',
-      '数值验收标准（例如 ±5mm）、命名、目录结构、代码风格与物理/工程约束一律按宪法执行；确有必要偏离时，先说明理由，再取得用户同意。',
-      '需要完整原文（下文可能因字数预算被裁剪）时调用 constitution_read；发现新的长期约束时调用 constitution_learn 沉淀下来，而不是只在本次会话里遵守。',
+      '優先級：workspace > 項目 > 領域 > 全局；同一主題相互衝突時，以優先級高者為準。',
+      '數值驗收標準（例如 ±5mm）、命名、目錄結構、代碼風格與物理/工程約束一律按憲法執行；確有必要偏離時，先說明理由，再取得用戶同意。',
+      '需要完整原文（下文可能因字數預算被裁剪）時調用 constitution_read；發現新的長期約束時調用 constitution_learn 沉澱下來，而不是只在本次會話裡遵守。',
     ],
-    truncated: '以下层因超出字数预算未注入，需要时用 constitution_read 读取：',
+    truncated: '以下層因超出字數預算未注入，需要時用 constitution_read 讀取：',
     matched: '匹配',
-    empty: '宪法目录为空。用 constitution_learn 写入第一条长期约束。',
-    priority: { workspace: '工作区', project: '项目', domain: '领域', core: '全局' },
+    empty: '憲法目錄為空。用 constitution_learn 寫入第一條長期約束。',
+    priority: { workspace: '工作區', project: '項目', domain: '領域', core: '全局' },
   },
   en: {
     heading: '## Engineering constitution (inherited across sessions)',
@@ -111,22 +111,22 @@ function resolveConfig(config) {
 }
 
 /** The Chinese seed corpus written when the root directory does not exist yet. */
-const SEED_ZH = `# 工程宪法 · Global constitution
+const SEED_ZH = `# 工程憲法 · Global constitution
 
-> 这一层对**所有**会话生效。写"工程哲学"，不要写某个项目的一次性细节。
-> 每行一条规则，用 \`-\` 开头；越具体越容易被遵守（可验证 > 模糊）。
+> 這一層對**所有**會話生效。寫"工程哲學"，不要寫某個項目的一次性細節。
+> 每行一條規則，用 \`-\` 開頭；越具體越容易被遵守（可驗證 > 模糊）。
 
-## 交付标准
-- 任何尺寸/公差我都要求给出可验证的验收区间（例如 ±5mm），不要只说"差不多"。
-- 结论先给，验证过程（跑了什么、看到什么）附在后面。
+## 交付標準
+- 任何尺寸/公差我都要求給出可驗證的驗收區間（例如 ±5mm），不要只說"差不多"。
+- 結論先給，驗證過程（跑了什麼、看到什麼）附在後面。
 
-## 工程风格
-- 先能跑通再谈优雅；第一版交付必须可执行、可验证。
-- 改动前先读现有实现；不要用推测代替阅读。
-- 破坏性操作先确认，再执行。
+## 工程風格
+- 先能跑通再談優雅；第一版交付必須可執行、可驗證。
+- 改動前先讀現有實現；不要用推測代替閱讀。
+- 破壞性操作先確認，再執行。
 
-## 已知边界
-- 不确定的地方直接说"未验证"，不要编造。
+## 已知邊界
+- 不確定的地方直接說"未驗證"，不要編造。
 `
 
 /** The English seed corpus. */
@@ -694,7 +694,7 @@ export function apply(ctx, config) {
 
       if (layer === 'core') {
         const file = path.join(resolved.root, 'constitution.md')
-        const duplicate = appendRule(file, rule, ['# 工程宪法 · Global constitution', '', '## 长期约束'])
+        const duplicate = appendRule(file, rule, ['# 工程憲法 · Global constitution', '', '## 長期約束'])
         return { file, layer, duplicate, scope: 'every session' }
       }
       if (layer === 'domain') {
@@ -712,7 +712,7 @@ export function apply(ctx, config) {
           '',
           `# ${rawName} · domain constitution`,
           '',
-          '## 长期约束',
+          '## 長期約束',
         ])
         return {
           file,
@@ -732,7 +732,7 @@ export function apply(ctx, config) {
           '',
           `# ${projectName} · project constitution`,
           '',
-          '## 长期约束',
+          '## 長期約束',
         ])
         return { file, layer, duplicate, scope: `working directory ${cwd}` }
       }
