@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-constitution",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Engineer memory with coherence: inject a layered project constitution into every new DSH session automatically.",
   "type": "module",

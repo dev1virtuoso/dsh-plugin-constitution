@@ -59,7 +59,7 @@ git push -u origin main
 1. 倉庫 **About** 裡填一句話簡介 + 網站（可填 npm 頁面）。
 2. 加 **Topics**：`dsh-plugin`、`deepseek-harness`、`dsh`、`ai-agent`、`memory`。
    GitHub 的 topic 頁是別人按關鍵詞找到你的主要途徑。
-3. 打一個 **Release**（tag `v0.1.0`），附上截圖/說明。
+3. 打一個 **Release**（tag `v0.1.1`），附上截圖/說明。
 
 ---
 
@@ -131,7 +131,7 @@ DSH 的 **Discover** 讀的是「插件市場索引」：一個靜態 JSON（for
 ```json
 "versions": [
   {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publishTimestamp": 1795000000,
     "source": { "type": "npm" },
     "engines": { "dsh": ">=0.2.0" }
