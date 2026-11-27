@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "title": { "en": "Carson's DSH plugins", "zh": "Carson 的 DSH 插件" },
+  "description": {
+    "en": "Small, single-purpose plugins for DeepSeek Harness.",
+    "zh": "DeepSeek Harness 的小型单功能插件。"
+  },
+  "metadata": {
+    "categories": {
+      "memory": { "title": { "en": "Memory & context", "zh": "记忆与上下文" } }
+    },
+    "labels": {
+      "host-only": { "title": { "en": "Host only", "zh": "仅 Host" } }
+    },
+    "sortKeys": {
+      "stars": { "title": { "en": "Stars", "zh": "星标" }, "order": "desc" }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-constitution",
+      "title": { "en": "Engineering constitution", "zh": "工程宪法" },
+      "description": {
+        "en": "Inherits a layered project constitution into every new session automatically.",
+        "zh": "把分层的项目宪法自动继承进每一个新会话。"
+      },
+      "author": "Carson Wu",
+      "homepage": "https://github.com/YOUR-GITHUB-NAME/dsh-plugin-constitution",
+      "repository": {
+        "url": "https://github.com/YOUR-GITHUB-NAME/dsh-plugin-constitution"
+      },
+      "metadata": {
+        "category": "memory",
+        "keywords": ["memory", "context", "constitution", "engineering", "coherence"],
+        "labels": ["host-only"],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795000000,
+          "source": { "type": "npm" },
+          "engines": {}
+        }
+      ]
+    }
+  ]
+}

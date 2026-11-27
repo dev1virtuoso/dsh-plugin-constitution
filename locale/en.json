@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Engineering constitution",
+    "description": "Inherits a layered project constitution into every new session automatically — global engineering philosophy, domain packs, and project law are resolved against the session's working directory and rebuilt into the system prompt at each step, so no new session has to be re-told the rules. Layers are plain Markdown under ~/.dsh-constitution (override with config root). The constitution_read tool quotes the resolved layers and their source files, constitution_learn persists a newly stated long-term rule into the global, domain, or project layer, and constitution_status explains why a layer did or did not apply. Nothing is sent anywhere: the corpus stays on disk, is read once per working directory (cached briefly), and contributes at most maxChars characters to the prompt. Turning the plugin off removes the section and the three tools; the Markdown files remain.",
+    "detail": "docs/DETAIL.md"
+  }
+}

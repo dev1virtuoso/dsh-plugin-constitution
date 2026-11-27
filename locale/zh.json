@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "工程宪法",
+    "description": "把分层的项目宪法自动继承进每一个新会话：全局工程哲学、领域包、项目法按会话的工作目录解析，并在每一步重建进系统提示，新会话不必再被重新交代一遍规则。各层是 ~/.dsh-constitution 下的普通 Markdown（可用 config 的 root 覆盖）。constitution_read 读取当前生效的层及其来源文件，constitution_learn 把新提出的长期约束沉淀进全局、领域或项目层，constitution_status 解释某层为何生效或未生效。数据不外发：语料只留在本地磁盘，每个工作目录读取一次（短暂缓存），最多向提示贡献 maxChars 个字符。关闭插件即移除该段落与三个工具，Markdown 文件保留。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

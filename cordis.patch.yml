@@ -1,0 +1,4 @@
+- insert:
+    - id: constitution
+      name: dsh-plugin-constitution
+      config: {}

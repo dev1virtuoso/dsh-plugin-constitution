@@ -1,0 +1,37 @@
+{
+  "name": "dsh-plugin-constitution",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Engineer memory with coherence: inject a layered project constitution into every new DSH session automatically.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "memory",
+    "constitution",
+    "context"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node test/layers.mjs && node test/smoke.mjs"
+  }
+}
